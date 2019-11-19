@@ -42,7 +42,7 @@ open class RLMEntry: Object {
     ///   - schema: instance of RLMObjectSchema.
     required public init(realm: RLMRealm, schema: RLMObjectSchema) {
         self.entryId = ""
-        super.init(realm: realm, schema: schema)
+        super.init()
     }
     
     
