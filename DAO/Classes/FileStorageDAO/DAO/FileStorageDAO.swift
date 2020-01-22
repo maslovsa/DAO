@@ -26,8 +26,8 @@ open class FileStorageDAO<Model: Entity, FSModel: FileStorageEntry>: DAO<Model> 
     ///   - translator: translator for current `Model` and `FSModel` types.
     public init(translator: FileStorageTranslator<Model, FSModel>) {
         self.translator = translator
-
         super.init()
+        loadData()
     }
 
     //MARK: - DAO
@@ -107,6 +107,14 @@ open class FileStorageDAO<Model: Entity, FSModel: FileStorageEntry>: DAO<Model> 
             saveData()
         }
     }
+
+    public var fileNameRaw: String {
+        return String(describing: type(of: self))
+    }
+
+    public var fileName: String {
+        return (fileNameRaw.components(separatedBy: NSCharacterSet.alphanumerics.inverted) as NSArray).componentsJoined(by: "") + ".fs"
+    }
     
 }
 
@@ -117,10 +125,6 @@ private extension FileStorageDAO {
         let manager = FileManager.default
         let paths = manager.urls(for: .cachesDirectory, in:.userDomainMask)
         return paths.first?.appendingPathComponent(fileName, isDirectory: false)
-    }
-
-    var fileName: String {
-        return String(describing: type(of: self))
     }
 
     func loadData() {
