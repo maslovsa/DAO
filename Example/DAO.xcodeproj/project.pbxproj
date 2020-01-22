@@ -11,6 +11,7 @@
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		63EBBC5B24D75059B9ADA532 /* Pods_RealmDAOTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCA2A834AEC013372828BE4 /* Pods_RealmDAOTests.framework */; };
 		78A211B7C1B6D6AF282EBB71 /* Pods_DAO_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A944DFD46BDAF9137BA01D6 /* Pods_DAO_Example.framework */; };
+		8FD301AF23D8868200813C2A /* FSEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD301AB23D8868200813C2A /* FSEntity.swift */; };
 		AA10ECB91EEFE058001228A1 /* RealmDAOBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10ECB51EEFE058001228A1 /* RealmDAOBookTests.swift */; };
 		AA10ECBA1EEFE058001228A1 /* RealmDAOEntityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10ECB61EEFE058001228A1 /* RealmDAOEntityTests.swift */; };
 		AA10ECBB1EEFE058001228A1 /* RealmDAOFolderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10ECB71EEFE058001228A1 /* RealmDAOFolderTests.swift */; };
@@ -74,6 +75,7 @@
 		6F42144986137E1707B5FAC0 /* Pods_CoreDataDAOTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreDataDAOTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AA81098C68FE90BF55455CC /* DAO.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DAO.podspec; path = ../DAO.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8FB85F7F7AE5E16EDA09AF5A /* Pods-RealmDAOTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmDAOTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmDAOTests/Pods-RealmDAOTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8FD301AB23D8868200813C2A /* FSEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSEntity.swift; sourceTree = "<group>"; };
 		9096125064B44D5035341130 /* Pods-DAO_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DAO_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DAO_Example/Pods-DAO_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A0C0C1D67BC9E557747CBD93 /* Pods-DAO_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DAO_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DAO_Tests/Pods-DAO_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		AA10ECAA1EEFE039001228A1 /* RealmDAOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealmDAOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -198,6 +200,14 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		8FD301AA23D8868200813C2A /* FileStorage */ = {
+			isa = PBXGroup;
+			children = (
+				8FD301AB23D8868200813C2A /* FSEntity.swift */,
+			);
+			path = FileStorage;
+			sourceTree = "<group>";
+		};
 		AA10ECAB1EEFE039001228A1 /* RealmDAOTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -270,9 +280,10 @@
 			isa = PBXGroup;
 			children = (
 				AA35255C1EEFDBE2009C4375 /* Book.swift */,
-				AA35255D1EEFDBE2009C4375 /* CoreDataDatabase */,
 				AA3525641EEFDBE2009C4375 /* Folder.swift */,
 				AA3525651EEFDBE2009C4375 /* Message.swift */,
+				8FD301AA23D8868200813C2A /* FileStorage */,
+				AA35255D1EEFDBE2009C4375 /* CoreDataDatabase */,
 				AA3525661EEFDBE2009C4375 /* RealmDatabase */,
 			);
 			path = Model;
@@ -582,6 +593,7 @@
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				AA35257B1EEFDBE2009C4375 /* DBBook.swift in Sources */,
 				AA3525701EEFDBE2009C4375 /* RLMFolderTranslator.swift in Sources */,
+				8FD301AF23D8868200813C2A /* FSEntity.swift in Sources */,
 				AA35257E1EEFDBE2009C4375 /* DBMessage.swift in Sources */,
 				AA35256F1EEFDBE2009C4375 /* RLMEntityTranslator.swift in Sources */,
 				AA3525761EEFDBE2009C4375 /* CDFolder.swift in Sources */,
