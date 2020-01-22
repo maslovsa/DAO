@@ -1,8 +1,10 @@
 PODS:
   - DAO (1.3.11):
     - DAO/CoreData (= 1.3.11)
+    - DAO/FileStorage (= 1.3.11)
     - DAO/Realm (= 1.3.11)
   - DAO/CoreData (1.3.11)
+  - DAO/FileStorage (1.3.11)
   - DAO/Realm (1.3.11):
     - RealmSwift (= 5.0.0-alpha.1)
   - Realm (5.0.0-alpha.1):
@@ -24,7 +26,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DAO: 25762834b3b655144e8b75594057397a4e09dddb
+  DAO: 32184faccbc40d9e267e18ac271e3f050f0e0c2f
   Realm: 94819935d4b8888ff472a92f0587a662ec3bd9fa
   RealmSwift: d8a1024179e1057d029d0089145efda49da512a4
 

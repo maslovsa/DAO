@@ -6,7 +6,7 @@ target 'DAO_Example' do
   target 'CoreDataDAOTests' do
       inherit! :search_paths
   end
-  
+
   target 'RealmDAOTests' do
       inherit! :search_paths
   end

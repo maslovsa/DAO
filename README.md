@@ -32,6 +32,12 @@ Or with Realm:
 pod 'DAO/Realm'
 ```
 
+Or with File Storage:
+
+```ruby
+pod 'DAO/FileStorage'
+```
+
 Carthage
 
 Make the following entry in your Cartfile:
