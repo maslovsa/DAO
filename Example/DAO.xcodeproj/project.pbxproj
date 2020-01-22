@@ -11,7 +11,10 @@
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		63EBBC5B24D75059B9ADA532 /* Pods_RealmDAOTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCA2A834AEC013372828BE4 /* Pods_RealmDAOTests.framework */; };
 		78A211B7C1B6D6AF282EBB71 /* Pods_DAO_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A944DFD46BDAF9137BA01D6 /* Pods_DAO_Example.framework */; };
+		8F0D11C423D88F65005EB539 /* FileStorageDAOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0D11C323D88F65005EB539 /* FileStorageDAOTests.swift */; };
+		8F0D11CD23D8905B005EB539 /* FSEntityTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0D11CC23D8905B005EB539 /* FSEntityTranslator.swift */; };
 		8FD301AF23D8868200813C2A /* FSEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD301AB23D8868200813C2A /* FSEntity.swift */; };
+		99E8E8F2AEA7E6DE5A4DE216 /* Pods_FileStorageDAOTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E25E193AFE4C84EEB459E6C /* Pods_FileStorageDAOTests.framework */; };
 		AA10ECB91EEFE058001228A1 /* RealmDAOBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10ECB51EEFE058001228A1 /* RealmDAOBookTests.swift */; };
 		AA10ECBA1EEFE058001228A1 /* RealmDAOEntityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10ECB61EEFE058001228A1 /* RealmDAOEntityTests.swift */; };
 		AA10ECBB1EEFE058001228A1 /* RealmDAOFolderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10ECB71EEFE058001228A1 /* RealmDAOFolderTests.swift */; };
@@ -45,6 +48,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		8F0D11C623D88F65005EB539 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
+			remoteInfo = DAO_Example;
+		};
 		AA10ECAF1EEFE039001228A1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
@@ -72,8 +82,14 @@
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B14B1EA7DC79FC4DC1DE526 /* Pods-DAO_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DAO_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-DAO_Example/Pods-DAO_Example.release.xcconfig"; sourceTree = "<group>"; };
+		6E25E193AFE4C84EEB459E6C /* Pods_FileStorageDAOTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FileStorageDAOTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F42144986137E1707B5FAC0 /* Pods_CoreDataDAOTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreDataDAOTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71B955562AACF5CBF74C0A38 /* Pods-FileStorageDAOTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FileStorageDAOTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FileStorageDAOTests/Pods-FileStorageDAOTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7AA81098C68FE90BF55455CC /* DAO.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DAO.podspec; path = ../DAO.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8F0D11C123D88F64005EB539 /* FileStorageDAOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FileStorageDAOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F0D11C323D88F65005EB539 /* FileStorageDAOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileStorageDAOTests.swift; sourceTree = "<group>"; };
+		8F0D11C523D88F65005EB539 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F0D11CC23D8905B005EB539 /* FSEntityTranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSEntityTranslator.swift; sourceTree = "<group>"; };
 		8FB85F7F7AE5E16EDA09AF5A /* Pods-RealmDAOTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmDAOTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmDAOTests/Pods-RealmDAOTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8FD301AB23D8868200813C2A /* FSEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSEntity.swift; sourceTree = "<group>"; };
 		9096125064B44D5035341130 /* Pods-DAO_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DAO_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DAO_Example/Pods-DAO_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +132,7 @@
 		B3F6075B730F33239A8C0C16 /* Pods-DAO_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DAO_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DAO_Tests/Pods-DAO_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B83929C10B53857ABAEBA293 /* Pods-CoreDataDAOTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataDAOTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreDataDAOTests/Pods-CoreDataDAOTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BF445E2FB5382CAF4125954E /* Pods_DAO_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DAO_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F081281B8787195F1B8CB9C1 /* Pods-FileStorageDAOTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FileStorageDAOTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FileStorageDAOTests/Pods-FileStorageDAOTests.release.xcconfig"; sourceTree = "<group>"; };
 		F8C399142A0F0FA7C064D093 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,6 +142,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				78A211B7C1B6D6AF282EBB71 /* Pods_DAO_Example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F0D11BE23D88F64005EB539 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99E8E8F2AEA7E6DE5A4DE216 /* Pods_FileStorageDAOTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +178,7 @@
 				607FACD21AFB9204008FA782 /* Example for DAO */,
 				AA3525881EEFDCE6009C4375 /* CoreDataDAOTests */,
 				AA10ECAB1EEFE039001228A1 /* RealmDAOTests */,
+				8F0D11C223D88F65005EB539 /* FileStorageDAOTests */,
 				CB0F3F47EAF7977E58A370FB /* Frameworks */,
 				EF4D865297EF284754A73C8C /* Pods */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
@@ -166,6 +192,7 @@
 				607FACD01AFB9204008FA782 /* DAO_Example.app */,
 				AA3525871EEFDCE6009C4375 /* CoreDataDAOTests.xctest */,
 				AA10ECAA1EEFE039001228A1 /* RealmDAOTests.xctest */,
+				8F0D11C123D88F64005EB539 /* FileStorageDAOTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -198,6 +225,23 @@
 				F8C399142A0F0FA7C064D093 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		8F0D11C223D88F65005EB539 /* FileStorageDAOTests */ = {
+			isa = PBXGroup;
+			children = (
+				8F0D11C323D88F65005EB539 /* FileStorageDAOTests.swift */,
+				8F0D11C523D88F65005EB539 /* Info.plist */,
+			);
+			path = FileStorageDAOTests;
+			sourceTree = "<group>";
+		};
+		8F0D11CB23D8905B005EB539 /* FileStorageTranslator */ = {
+			isa = PBXGroup;
+			children = (
+				8F0D11CC23D8905B005EB539 /* FSEntityTranslator.swift */,
+			);
+			path = FileStorageTranslator;
 			sourceTree = "<group>";
 		};
 		8FD301AA23D8868200813C2A /* FileStorage */ = {
@@ -249,6 +293,7 @@
 		AA3525511EEFDBE2009C4375 /* DAO */ = {
 			isa = PBXGroup;
 			children = (
+				8F0D11CB23D8905B005EB539 /* FileStorageTranslator */,
 				AA3525521EEFDBE2009C4375 /* CoreDataTranslator */,
 				AA3525561EEFDBE2009C4375 /* RealmTranslator */,
 			);
@@ -342,6 +387,7 @@
 				BF445E2FB5382CAF4125954E /* Pods_DAO_Tests.framework */,
 				6F42144986137E1707B5FAC0 /* Pods_CoreDataDAOTests.framework */,
 				0DCA2A834AEC013372828BE4 /* Pods_RealmDAOTests.framework */,
+				6E25E193AFE4C84EEB459E6C /* Pods_FileStorageDAOTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -357,6 +403,8 @@
 				1DD31E834DFA3BE6198A94A4 /* Pods-CoreDataDAOTests.release.xcconfig */,
 				8FB85F7F7AE5E16EDA09AF5A /* Pods-RealmDAOTests.debug.xcconfig */,
 				048D2FC052C450E7600E2FA9 /* Pods-RealmDAOTests.release.xcconfig */,
+				71B955562AACF5CBF74C0A38 /* Pods-FileStorageDAOTests.debug.xcconfig */,
+				F081281B8787195F1B8CB9C1 /* Pods-FileStorageDAOTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -382,6 +430,25 @@
 			productName = DAO;
 			productReference = 607FACD01AFB9204008FA782 /* DAO_Example.app */;
 			productType = "com.apple.product-type.application";
+		};
+		8F0D11C023D88F64005EB539 /* FileStorageDAOTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F0D11CA23D88F65005EB539 /* Build configuration list for PBXNativeTarget "FileStorageDAOTests" */;
+			buildPhases = (
+				669821DD5D35EDED3063B336 /* [CP] Check Pods Manifest.lock */,
+				8F0D11BD23D88F64005EB539 /* Sources */,
+				8F0D11BE23D88F64005EB539 /* Frameworks */,
+				8F0D11BF23D88F64005EB539 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F0D11C723D88F65005EB539 /* PBXTargetDependency */,
+			);
+			name = FileStorageDAOTests;
+			productName = FileStorageDAOTests;
+			productReference = 8F0D11C123D88F64005EB539 /* FileStorageDAOTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		AA10ECA91EEFE039001228A1 /* RealmDAOTests */ = {
 			isa = PBXNativeTarget;
@@ -427,13 +494,19 @@
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 1110;
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 1030;
+					};
+					8F0D11C023D88F64005EB539 = {
+						CreatedOnToolsVersion = 11.1;
+						DevelopmentTeam = 47YU4DF97R;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 					AA10ECA91EEFE039001228A1 = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -467,6 +540,7 @@
 				607FACCF1AFB9204008FA782 /* DAO_Example */,
 				AA3525861EEFDCE6009C4375 /* CoreDataDAOTests */,
 				AA10ECA91EEFE039001228A1 /* RealmDAOTests */,
+				8F0D11C023D88F64005EB539 /* FileStorageDAOTests */,
 			);
 		};
 /* End PBXProject section */
@@ -477,6 +551,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				02160229232A36ED0036116E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F0D11BF23D88F64005EB539 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +590,28 @@
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-DAO_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		669821DD5D35EDED3063B336 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FileStorageDAOTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -583,6 +686,7 @@
 				AA35256E1EEFDBE2009C4375 /* RLMBookTranslator.swift in Sources */,
 				AA3525731EEFDBE2009C4375 /* CDEntity+CoreDataProperties.swift in Sources */,
 				AA3525771EEFDBE2009C4375 /* CDMessage+CoreDataProperties.swift in Sources */,
+				8F0D11CD23D8905B005EB539 /* FSEntityTranslator.swift in Sources */,
 				AA35257D1EEFDBE2009C4375 /* DBFolder.swift in Sources */,
 				AA35257C1EEFDBE2009C4375 /* DBEntity.swift in Sources */,
 				AA35257A1EEFDBE2009C4375 /* Message.swift in Sources */,
@@ -603,6 +707,14 @@
 				AA35256B1EEFDBE2009C4375 /* CDEntityTranslator.swift in Sources */,
 				AA3525751EEFDBE2009C4375 /* CDFolder+CoreDataProperties.swift in Sources */,
 				AA3525711EEFDBE2009C4375 /* RLMMessageTranslator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F0D11BD23D88F64005EB539 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F0D11C423D88F65005EB539 /* FileStorageDAOTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,6 +743,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		8F0D11C723D88F65005EB539 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 607FACCF1AFB9204008FA782 /* DAO_Example */;
+			targetProxy = 8F0D11C623D88F65005EB539 /* PBXContainerItemProxy */;
+		};
 		AA10ECB01EEFE039001228A1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 607FACCF1AFB9204008FA782 /* DAO_Example */;
@@ -781,6 +898,61 @@
 			};
 			name = Release;
 		};
+		8F0D11C823D88F65005EB539 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71B955562AACF5CBF74C0A38 /* Pods-FileStorageDAOTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 47YU4DF97R;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = FileStorageDAOTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = io.scal.filestorage.FileStorageDAOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DAO_Example.app/DAO_Example";
+			};
+			name = Debug;
+		};
+		8F0D11C923D88F65005EB539 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F081281B8787195F1B8CB9C1 /* Pods-FileStorageDAOTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 47YU4DF97R;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = FileStorageDAOTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = io.scal.filestorage.FileStorageDAOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DAO_Example.app/DAO_Example";
+			};
+			name = Release;
+		};
 		AA10ECB21EEFE039001228A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8FB85F7F7AE5E16EDA09AF5A /* Pods-RealmDAOTests.debug.xcconfig */;
@@ -888,6 +1060,15 @@
 			buildConfigurations = (
 				607FACF01AFB9204008FA782 /* Debug */,
 				607FACF11AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F0D11CA23D88F65005EB539 /* Build configuration list for PBXNativeTarget "FileStorageDAOTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F0D11C823D88F65005EB539 /* Debug */,
+				8F0D11C923D88F65005EB539 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

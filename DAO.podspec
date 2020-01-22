@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'FileStorage' do |cd|
-      cd.source_files = 'DAO/Classes/FileStorage/**/*', 'DAO/Classes/Core/**/*'
+      cd.source_files = 'DAO/Classes/FileStorageDAO/**/*', 'DAO/Classes/Core/**/*'
   end
 
 end

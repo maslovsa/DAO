@@ -10,4 +10,8 @@ target 'DAO_Example' do
   target 'RealmDAOTests' do
       inherit! :search_paths
   end
+
+  target 'FileStorageDAOTests' do
+      inherit! :search_paths
+  end
 end
