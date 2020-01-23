@@ -1,5 +1,5 @@
 //
-//  FileStorageDAOTests.swift
+//  FileStorageDAOEntityTests.swift
 //  FileStorageDAOTests
 //
 //  Created by Sergey Maslov on 22.01.2020.
@@ -10,7 +10,7 @@ import XCTest
 import DAO
 @testable import DAO_Example
 
-final class FileStorageDAOTests: XCTestCase {
+final class FileStorageDAOEntityTests: XCTestCase {
 
     private var dao: FileStorageDAO<Entity, FSEntity>!
 
@@ -18,9 +18,6 @@ final class FileStorageDAOTests: XCTestCase {
         super.setUp()
 
         dao = FileStorageDAO(translator: FSEntityTranslator())
-
-        print(dao.fileNameRaw)
-        print(dao.fileName)
     }
 
     override func tearDown() {

@@ -9,7 +9,7 @@
 import DAO
 
 struct FSEntity: FileStorageEntry {
-    var id: String
+    let id: String
 
     static func entityWithId(_ entityId: String) -> FSEntity {
         return FSEntity(id: entityId)

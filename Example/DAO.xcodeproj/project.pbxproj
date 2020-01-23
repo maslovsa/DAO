@@ -11,8 +11,17 @@
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		63EBBC5B24D75059B9ADA532 /* Pods_RealmDAOTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCA2A834AEC013372828BE4 /* Pods_RealmDAOTests.framework */; };
 		78A211B7C1B6D6AF282EBB71 /* Pods_DAO_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A944DFD46BDAF9137BA01D6 /* Pods_DAO_Example.framework */; };
-		8F0D11C423D88F65005EB539 /* FileStorageDAOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0D11C323D88F65005EB539 /* FileStorageDAOTests.swift */; };
+		8F0D11C423D88F65005EB539 /* FileStorageDAOEntityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0D11C323D88F65005EB539 /* FileStorageDAOEntityTests.swift */; };
 		8F0D11CD23D8905B005EB539 /* FSEntityTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0D11CC23D8905B005EB539 /* FSEntityTranslator.swift */; };
+		8F40E24623D9C0C80054A40E /* FSBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40E24523D9C0C80054A40E /* FSBook.swift */; };
+		8F40E24823D9C3070054A40E /* FireStorageDAOBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40E24723D9C3070054A40E /* FireStorageDAOBookTests.swift */; };
+		8F40E24A23D9C4160054A40E /* FSBookTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40E24923D9C4160054A40E /* FSBookTranslator.swift */; };
+		8F40E24C23D9C5DD0054A40E /* FSMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40E24B23D9C5DD0054A40E /* FSMessage.swift */; };
+		8F40E24E23D9C6220054A40E /* FSFolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40E24D23D9C6220054A40E /* FSFolder.swift */; };
+		8F40E25023D9C65E0054A40E /* FSMessageTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40E24F23D9C65E0054A40E /* FSMessageTranslator.swift */; };
+		8F40E25223D9C72A0054A40E /* FSFolderTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40E25123D9C72A0054A40E /* FSFolderTranslator.swift */; };
+		8F40E25423D9C8730054A40E /* FireStorageDAOMessageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40E25323D9C8730054A40E /* FireStorageDAOMessageTests.swift */; };
+		8F40E25623D9C8D20054A40E /* FireStorageDAOFolderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40E25523D9C8D20054A40E /* FireStorageDAOFolderTests.swift */; };
 		8FD301AF23D8868200813C2A /* FSEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD301AB23D8868200813C2A /* FSEntity.swift */; };
 		99E8E8F2AEA7E6DE5A4DE216 /* Pods_FileStorageDAOTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E25E193AFE4C84EEB459E6C /* Pods_FileStorageDAOTests.framework */; };
 		AA10ECB91EEFE058001228A1 /* RealmDAOBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10ECB51EEFE058001228A1 /* RealmDAOBookTests.swift */; };
@@ -87,9 +96,18 @@
 		71B955562AACF5CBF74C0A38 /* Pods-FileStorageDAOTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FileStorageDAOTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FileStorageDAOTests/Pods-FileStorageDAOTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7AA81098C68FE90BF55455CC /* DAO.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DAO.podspec; path = ../DAO.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8F0D11C123D88F64005EB539 /* FileStorageDAOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FileStorageDAOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F0D11C323D88F65005EB539 /* FileStorageDAOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileStorageDAOTests.swift; sourceTree = "<group>"; };
+		8F0D11C323D88F65005EB539 /* FileStorageDAOEntityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileStorageDAOEntityTests.swift; sourceTree = "<group>"; };
 		8F0D11C523D88F65005EB539 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F0D11CC23D8905B005EB539 /* FSEntityTranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSEntityTranslator.swift; sourceTree = "<group>"; };
+		8F40E24523D9C0C80054A40E /* FSBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSBook.swift; sourceTree = "<group>"; };
+		8F40E24723D9C3070054A40E /* FireStorageDAOBookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireStorageDAOBookTests.swift; sourceTree = "<group>"; };
+		8F40E24923D9C4160054A40E /* FSBookTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSBookTranslator.swift; sourceTree = "<group>"; };
+		8F40E24B23D9C5DD0054A40E /* FSMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSMessage.swift; sourceTree = "<group>"; };
+		8F40E24D23D9C6220054A40E /* FSFolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSFolder.swift; sourceTree = "<group>"; };
+		8F40E24F23D9C65E0054A40E /* FSMessageTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSMessageTranslator.swift; sourceTree = "<group>"; };
+		8F40E25123D9C72A0054A40E /* FSFolderTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSFolderTranslator.swift; sourceTree = "<group>"; };
+		8F40E25323D9C8730054A40E /* FireStorageDAOMessageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireStorageDAOMessageTests.swift; sourceTree = "<group>"; };
+		8F40E25523D9C8D20054A40E /* FireStorageDAOFolderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireStorageDAOFolderTests.swift; sourceTree = "<group>"; };
 		8FB85F7F7AE5E16EDA09AF5A /* Pods-RealmDAOTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmDAOTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmDAOTests/Pods-RealmDAOTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8FD301AB23D8868200813C2A /* FSEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSEntity.swift; sourceTree = "<group>"; };
 		9096125064B44D5035341130 /* Pods-DAO_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DAO_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DAO_Example/Pods-DAO_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -230,7 +248,10 @@
 		8F0D11C223D88F65005EB539 /* FileStorageDAOTests */ = {
 			isa = PBXGroup;
 			children = (
-				8F0D11C323D88F65005EB539 /* FileStorageDAOTests.swift */,
+				8F0D11C323D88F65005EB539 /* FileStorageDAOEntityTests.swift */,
+				8F40E24723D9C3070054A40E /* FireStorageDAOBookTests.swift */,
+				8F40E25323D9C8730054A40E /* FireStorageDAOMessageTests.swift */,
+				8F40E25523D9C8D20054A40E /* FireStorageDAOFolderTests.swift */,
 				8F0D11C523D88F65005EB539 /* Info.plist */,
 			);
 			path = FileStorageDAOTests;
@@ -240,6 +261,9 @@
 			isa = PBXGroup;
 			children = (
 				8F0D11CC23D8905B005EB539 /* FSEntityTranslator.swift */,
+				8F40E24923D9C4160054A40E /* FSBookTranslator.swift */,
+				8F40E24F23D9C65E0054A40E /* FSMessageTranslator.swift */,
+				8F40E25123D9C72A0054A40E /* FSFolderTranslator.swift */,
 			);
 			path = FileStorageTranslator;
 			sourceTree = "<group>";
@@ -248,6 +272,9 @@
 			isa = PBXGroup;
 			children = (
 				8FD301AB23D8868200813C2A /* FSEntity.swift */,
+				8F40E24B23D9C5DD0054A40E /* FSMessage.swift */,
+				8F40E24523D9C0C80054A40E /* FSBook.swift */,
+				8F40E24D23D9C6220054A40E /* FSFolder.swift */,
 			);
 			path = FileStorage;
 			sourceTree = "<group>";
@@ -685,17 +712,21 @@
 			files = (
 				AA35256E1EEFDBE2009C4375 /* RLMBookTranslator.swift in Sources */,
 				AA3525731EEFDBE2009C4375 /* CDEntity+CoreDataProperties.swift in Sources */,
+				8F40E24E23D9C6220054A40E /* FSFolder.swift in Sources */,
 				AA3525771EEFDBE2009C4375 /* CDMessage+CoreDataProperties.swift in Sources */,
+				8F40E25023D9C65E0054A40E /* FSMessageTranslator.swift in Sources */,
 				8F0D11CD23D8905B005EB539 /* FSEntityTranslator.swift in Sources */,
 				AA35257D1EEFDBE2009C4375 /* DBFolder.swift in Sources */,
 				AA35257C1EEFDBE2009C4375 /* DBEntity.swift in Sources */,
 				AA35257A1EEFDBE2009C4375 /* Message.swift in Sources */,
+				8F40E25223D9C72A0054A40E /* FSFolderTranslator.swift in Sources */,
 				AA3525791EEFDBE2009C4375 /* Folder.swift in Sources */,
 				AA3525741EEFDBE2009C4375 /* CDEntity.swift in Sources */,
 				AA3525781EEFDBE2009C4375 /* CDMessage.swift in Sources */,
 				AA3525821EEFDC24009C4375 /* Model.xcdatamodeld in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				AA35257B1EEFDBE2009C4375 /* DBBook.swift in Sources */,
+				8F40E24623D9C0C80054A40E /* FSBook.swift in Sources */,
 				AA3525701EEFDBE2009C4375 /* RLMFolderTranslator.swift in Sources */,
 				8FD301AF23D8868200813C2A /* FSEntity.swift in Sources */,
 				AA35257E1EEFDBE2009C4375 /* DBMessage.swift in Sources */,
@@ -705,6 +736,8 @@
 				AA3525721EEFDBE2009C4375 /* Book.swift in Sources */,
 				AA35256D1EEFDBE2009C4375 /* CDMessageTranslator.swift in Sources */,
 				AA35256B1EEFDBE2009C4375 /* CDEntityTranslator.swift in Sources */,
+				8F40E24C23D9C5DD0054A40E /* FSMessage.swift in Sources */,
+				8F40E24A23D9C4160054A40E /* FSBookTranslator.swift in Sources */,
 				AA3525751EEFDBE2009C4375 /* CDFolder+CoreDataProperties.swift in Sources */,
 				AA3525711EEFDBE2009C4375 /* RLMMessageTranslator.swift in Sources */,
 			);
@@ -714,7 +747,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F0D11C423D88F65005EB539 /* FileStorageDAOTests.swift in Sources */,
+				8F40E25623D9C8D20054A40E /* FireStorageDAOFolderTests.swift in Sources */,
+				8F0D11C423D88F65005EB539 /* FileStorageDAOEntityTests.swift in Sources */,
+				8F40E24823D9C3070054A40E /* FireStorageDAOBookTests.swift in Sources */,
+				8F40E25423D9C8730054A40E /* FireStorageDAOMessageTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

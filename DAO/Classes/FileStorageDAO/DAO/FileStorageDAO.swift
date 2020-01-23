@@ -54,8 +54,7 @@ open class FileStorageDAO<Model: Entity, FSModel: FileStorageEntry>: DAO<Model> 
         }
         saveData()
     }
-    
-    
+
     override open func read(_ entityId: String) -> Model? {
         return models.first(where: {$0.id == entityId } )
             .flatMap { translator.fill(fromEntry: $0) }
@@ -93,14 +92,12 @@ open class FileStorageDAO<Model: Entity, FSModel: FileStorageEntry>: DAO<Model> 
         return (array as? [FSModel] ?? [])
             .map { translator.fill(fromEntry: $0) }
     }
-    
-    
+
     override open func erase() throws {
         models.removeAll()
         saveData()
     }
-    
-    
+
     override open func erase(_ entityId: String) throws {
         if let index = models.firstIndex(where: { $0.id == entityId } ) {
             models.remove(at: index)
@@ -108,24 +105,28 @@ open class FileStorageDAO<Model: Entity, FSModel: FileStorageEntry>: DAO<Model> 
         }
     }
 
-    public var fileNameRaw: String {
-        return String(describing: type(of: self))
-    }
-
-    public var fileName: String {
-        return (fileNameRaw.components(separatedBy: NSCharacterSet.alphanumerics.inverted) as NSArray).componentsJoined(by: "") + ".fs"
-    }
-    
 }
 
 // MARK: - Private
 private extension FileStorageDAO {
+
+    var fileNameRaw: String {
+        return String(describing: type(of: self))
+    }
+
+    var fileName: String {
+        return (fileNameRaw.components(separatedBy: NSCharacterSet.alphanumerics.inverted) as NSArray).componentsJoined(by: "") + ".fs"
+    }
 
     func pathForFileName(_ fileName: String) -> URL? {
         let manager = FileManager.default
         let paths = manager.urls(for: .cachesDirectory, in:.userDomainMask)
         return paths.first?.appendingPathComponent(fileName, isDirectory: false)
     }
+}
+
+// MARK: - Private
+private extension FileStorageDAO {
 
     func loadData() {
         guard let url = pathForFileName(fileName),
