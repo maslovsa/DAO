@@ -33,9 +33,7 @@ final class FireStorageDAOFolderTests: XCTestCase {
         let folder = Folder(entityId: "V", name: "Delete", messages: [message])
 
         XCTAssertNoThrow(try dao.persist(folder), "Persist folder is failed")
-        let readFolder = try dao.read("V")
-        XCTAssertEqual(message, readFolder?.messages.first)
+        XCTAssertEqual(message,  dao.read("V")?.messages.first)
     }
-
 
 }
