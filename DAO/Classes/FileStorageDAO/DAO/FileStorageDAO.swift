@@ -15,7 +15,7 @@ open class FileStorageDAO<Model: Entity, FSModel: FileStorageEntry>: DAO<Model> 
     
     /// Translator for current `RLMEntry` and `FSModel` types.
     private let translator: FileStorageTranslator<Model, FSModel>
-    private(set) var storage = [FSModel]()
+    private(set) var models = [FSModel]()
 
 
     // MARK: - Public
@@ -34,10 +34,10 @@ open class FileStorageDAO<Model: Entity, FSModel: FileStorageEntry>: DAO<Model> 
     
     override open func persist(_ entity: Model) throws {
         let entry = translator.fill(fromEntity: entity)
-        if let index = storage.firstIndex(where: { $0.id == entity.entityId } ) {
-            storage[index] = entry
+        if let index = models.firstIndex(where: { $0.id == entity.entityId } ) {
+            models[index] = entry
         } else {
-            storage.append(entry)
+            models.append(entry)
         }
         saveData()
     }
@@ -46,10 +46,10 @@ open class FileStorageDAO<Model: Entity, FSModel: FileStorageEntry>: DAO<Model> 
     open override func persist(_ entities: [Model]) throws {
         entities.forEach { entity in
             let entry = translator.fill(fromEntity: entity)
-            if let index = storage.firstIndex(where: { $0.id == entity.entityId } ) {
-                storage[index] = entry
+            if let index = models.firstIndex(where: { $0.id == entity.entityId } ) {
+                models[index] = entry
             } else {
-                storage.append(entry)
+                models.append(entry)
             }
         }
         saveData()
@@ -57,13 +57,13 @@ open class FileStorageDAO<Model: Entity, FSModel: FileStorageEntry>: DAO<Model> 
     
     
     override open func read(_ entityId: String) -> Model? {
-        return storage.first(where: {$0.id == entityId } )
+        return models.first(where: {$0.id == entityId } )
             .flatMap { translator.fill(fromEntry: $0) }
     }
     
     
     open override func read() -> [Model] {
-        return storage.map(translator.fill(fromEntry:))
+        return models.map(translator.fill(fromEntry:))
     }
     
     
@@ -86,24 +86,24 @@ open class FileStorageDAO<Model: Entity, FSModel: FileStorageEntry>: DAO<Model> 
         ascending: Bool = true) -> [Model] { // TODO: add predicate and ascending
 
         guard let predicate = predicate else {
-            return storage.map(translator.fill(fromEntry:))
+            return models.map(translator.fill(fromEntry:))
         }
 
-        let array = (storage as NSArray).filtered(using: predicate)
+        let array = (models as NSArray).filtered(using: predicate)
         return (array as? [FSModel] ?? [])
             .map { translator.fill(fromEntry: $0) }
     }
     
     
     override open func erase() throws {
-        storage.removeAll()
+        models.removeAll()
         saveData()
     }
     
     
     override open func erase(_ entityId: String) throws {
-        if let index = storage.firstIndex(where: { $0.id == entityId } ) {
-            storage.remove(at: index)
+        if let index = models.firstIndex(where: { $0.id == entityId } ) {
+            models.remove(at: index)
             saveData()
         }
     }
@@ -128,48 +128,53 @@ private extension FileStorageDAO {
     }
 
     func loadData() {
-        guard let file = pathForFileName(fileName)?.path,
-            let storage = NSKeyedUnarchiver.unarchiveObject(withFile: file) as? [FSModel] else {
-                self.storage = []
+        guard let url = pathForFileName(fileName),
+            let data = try? Data(contentsOf: url),
+            let models = try? JSONDecoder().decode(FSModel.self, from: data) as? [FSModel] else {
+//            let models = NSKeyedUnarchiver.unarchivedObject(ofClasses: [Array<FSModel>.self], from: data) as? [FSModel] else {
+                self.models = []
                 return
         }
 
-        self.storage = storage
+        self.models = models
     }
 
     private func saveData() {
-        guard let file = pathForFileName(fileName) else { return }
-        let encodedData = NSKeyedArchiver.archivedData(withRootObject: storage)
+        guard let file = pathForFileName(fileName),
+            let encodedData = try? JSONEncoder().encode(models) else {
+                return
+        }
+
         try? encodedData.write(to: file)
     }
 
 
     func write(_ entry: FSModel) throws {
-        if let index = storage.firstIndex(where: { $0.id == entry.id } ) {
-            storage[index] = entry
+        if let index = models.firstIndex(where: { $0.id == entry.id } ) {
+            models[index] = entry
         } else {
-            storage.append(entry)
+            models.append(entry)
         }
         saveData()
     }
 
     func write(_ entries: [FSModel]) throws {
-        let newEntries = entries.filter { entry in storage.contains(where: { $0.id == entry.id }) }
-        storage.append(contentsOf: newEntries)
+        let newEntries = entries.filter { entry in models.contains(where: { $0.id == entry.id }) }
+        models.append(contentsOf: newEntries)
         saveData()
     }
 
-    func readFromFileStorage(_ entryId: String) throws -> FSModel? {
-        return storage.first(where: { $0.id == entryId} )
+    func readFromFilemodels(_ entryId: String) throws -> FSModel? {
+        return models.first(where: { $0.id == entryId} )
     }
 
 
-    func readFromFileStorage(_ predicate: NSPredicate? = nil) throws -> [FSModel] {
+    func readFromFilemodels(_ predicate: NSPredicate? = nil) throws -> [FSModel] {
         guard let predicate = predicate else {
-            return storage
+            return models
         }
 
-        let array = (storage as NSArray).filtered(using: predicate)
+        let array = (models as NSArray).filtered(using: predicate)
         return (array as? [FSModel] ?? [])
     }
 

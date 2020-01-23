@@ -10,9 +10,18 @@
 import Foundation
 
 /// Parent protocol for `FileStorage` entries.
-public protocol FileStorageEntry: Codable {
+public protocol FileStorageEntry: Codable, Hashable {
     
     /// Entry identifier. Must be unique.
     var id: String { get }
 
 }
+
+public extension FileStorageEntry {
+
+    /// Hash value for compare entities.
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+}
+
