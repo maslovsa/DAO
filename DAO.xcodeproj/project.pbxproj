@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8FB73BD923DB1EAE00F7BFDE /* SynchronizedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB73BD723DB1EA600F7BFDE /* SynchronizedArray.swift */; };
 		8FD3019E23D82AD300813C2A /* FileStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FD3019C23D82AD300813C2A /* FileStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8FD301A223D82AF600813C2A /* FileStorageDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD3018C23D8283F00813C2A /* FileStorageDAO.swift */; };
 		8FD301A323D82AF900813C2A /* FileStorageTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD3018E23D8283F00813C2A /* FileStorageTranslator.swift */; };
@@ -54,6 +55,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8FB73BD723DB1EA600F7BFDE /* SynchronizedArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynchronizedArray.swift; sourceTree = "<group>"; };
 		8FD3018C23D8283F00813C2A /* FileStorageDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileStorageDAO.swift; sourceTree = "<group>"; };
 		8FD3018E23D8283F00813C2A /* FileStorageTranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileStorageTranslator.swift; sourceTree = "<group>"; };
 		8FD3019023D8283F00813C2A /* FileStorageEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileStorageEntry.swift; sourceTree = "<group>"; };
@@ -106,9 +108,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8FB73BD623DB1EA600F7BFDE /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				8FB73BD723DB1EA600F7BFDE /* SynchronizedArray.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		8FD3018823D8283F00813C2A /* FileStorageDAO */ = {
 			isa = PBXGroup;
 			children = (
+				8FB73BD623DB1EA600F7BFDE /* Helper */,
 				8FD301A523D82B1300813C2A /* Core */,
 				8FD3018B23D8283F00813C2A /* DAO */,
 				8FD3018D23D8283F00813C2A /* Translator */,
@@ -463,6 +474,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FD301A823D82B1300813C2A /* Entity.swift in Sources */,
+				8FB73BD923DB1EAE00F7BFDE /* SynchronizedArray.swift in Sources */,
 				8FD301A423D82AFC00813C2A /* FileStorageEntry.swift in Sources */,
 				8FD301A223D82AF600813C2A /* FileStorageDAO.swift in Sources */,
 				8FD301A323D82AF900813C2A /* FileStorageTranslator.swift in Sources */,
