@@ -35,7 +35,7 @@ pod 'DAO/Realm'
 Or with File Storage:
 
 ```ruby
-pod 'DAO/FileStorage'
+pod 'DAO/FileStorage', :git => 'https://github.com/maslovsa/DAO'
 ```
 
 Carthage
@@ -124,3 +124,4 @@ Please look at the example project for more information.
 ## Authors
 
 Ivan Vavilov - iv@redmadrobot.com
+Sergey Maslov - maslovsa@gmail.com
